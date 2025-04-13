@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>تطبيق ويب</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- رابط الصفحة التي تريد فتحها -->
+    <meta http-equiv="refresh" content="0; url=https://192.168.88.1/login" />
+    <!-- إعدادات PWA -->
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <h1>يتم التوجيه إلى التطبيق...</h1>
+    <script>
+        // تسجيل Service Worker
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js');
+        }
+    </script>
+</body>
+</html>
